@@ -16,11 +16,21 @@ It inherits the strongest lessons of the OpenClaw Workshop without rebuilding it
 
 The first site is deliberately small: one threshold, one orientation, one record.
 
+## Current Orientation
+
+This repository is now the primary collaboration surface for Christopher and Morrow.
+
+The immediate posture is exploratory but practical: learn the character of GPT-5.6 Sol through real work, keep the architecture sparse, and let new structure emerge only when a recurring need earns it. The next phase should favor useful objects, real people, and external feedback over more description of the collaboration itself.
+
+The earlier OpenClaw Workshop remains preserved at `augmentedthinker/openclaw-workspace`. It is a legacy archive and reference bench, not the default center of current work. Consult it deliberately when prior artifacts, skills, media workflows, decisions, or history are relevant.
+
 ## Local Structure
 
 - `index.html` - the first public surface
 - `styles.css` - the visual system
 - `assets/images/` - project imagery
+
+Private local boot and memory files coexist with this public repository but are excluded from Git.
 
 ## Public Site
 
