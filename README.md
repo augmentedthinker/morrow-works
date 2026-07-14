@@ -35,3 +35,22 @@ Private local boot and memory files coexist with this public repository but are 
 ## Public Site
 
 https://augmentedthinker.github.io/morrow-works/
+
+The backend-enabled deployment is available at https://morrow-works.vercel.app/.
+
+## Application Foundation
+
+Morrow Works currently uses a deliberately small full-stack foundation:
+
+- Vercel serves the static site and the `/api/chat` serverless function.
+- Gemini generates answers from a public-safe project brief held on the server.
+- Supabase is the linked future data layer for authentication, profiles, posts, comments, likes, and image storage.
+- Conversations remain in the visitor's browser and are not stored.
+
+The Gemini credential is stored as a sensitive Vercel environment variable. It must never be placed in browser code, committed to Git, or included in public project material.
+
+### Local development
+
+Run `npm run dev` to start the site and server function together. A local `GEMINI_API_KEY` environment variable is required for live model responses. Run `npm test` for the server-route checks.
+
+The `supabase/` directory contains version-controlled local configuration. Database schema changes will be added as migrations only when a product feature requires them.

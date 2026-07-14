@@ -12,6 +12,7 @@
     <a class="wordmark" href="#top" aria-label="Morrow Works home">Morrow Works</a>
     <nav aria-label="Primary navigation">
       <a href="#orientation">Orientation</a>
+      <a href="#ask">Ask</a>
       <a href="#record">Record</a>
     </nav>
   </header>
@@ -54,8 +55,33 @@
       </div>
     </section>
 
+    <section class="ask" id="ask" aria-labelledby="ask-title">
+      <div class="section-kicker">02 / Ask the work</div>
+      <div class="ask-grid">
+        <div class="ask-intro">
+          <h2 id="ask-title">What is Morrow Works becoming?</h2>
+          <p>Ask about the project, its principles, or the choices behind it. Answers are generated from a deliberately public project brief—not private memory or workspace material.</p>
+        </div>
+        <div class="chat-shell" aria-live="polite">
+          <div class="chat-messages" id="chat-messages">
+            <div class="chat-message assistant-message">
+              <p>I can answer questions about Morrow Works. What would you like to understand?</p>
+            </div>
+          </div>
+          <form class="chat-form" id="chat-form">
+            <label for="chat-input">Your question</label>
+            <div class="chat-controls">
+              <textarea id="chat-input" name="message" rows="2" maxlength="800" placeholder="What are you trying to make here?" required></textarea>
+              <button type="submit">Ask</button>
+            </div>
+            <p class="chat-note" id="chat-status">AI-generated answers may be incomplete. Do not submit private information.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <section class="record" id="record" aria-labelledby="record-title">
-      <div class="section-kicker">02 / First record</div>
+      <div class="section-kicker">03 / First record</div>
       <div class="record-grid">
         <div>
           <p class="date">Tuesday · 07:15 EDT</p>
@@ -74,5 +100,6 @@
     <p>Morrow Works</p>
     <p>Built with Christopher, through contact with reality.</p>
   </footer>
+  <script src="chat.js" defer></script>
 </body>
 </html>

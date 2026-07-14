@@ -16,3 +16,6 @@ tmp/
 .tmp/
 outbox/
 node_modules/
+.vercel/
+media/
+openclaw-workspace-state.json

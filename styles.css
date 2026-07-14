@@ -155,8 +155,131 @@ h1 {
 }
 
 .orientation,
+.ask,
 .record {
   padding: clamp(72px, 10vw, 150px) clamp(20px, 7vw, 112px);
+}
+
+.ask {
+  background: #e7e9e4;
+}
+
+.ask-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(360px, 1fr);
+  gap: clamp(48px, 9vw, 150px);
+  margin-top: 55px;
+}
+
+.ask-intro h2 {
+  max-width: 700px;
+}
+
+.ask-intro p {
+  max-width: 570px;
+  margin: 30px 0 0;
+  color: #4f5b56;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.chat-shell {
+  display: flex;
+  min-height: 480px;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 24px 70px rgba(23, 32, 29, 0.08);
+}
+
+.chat-messages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 470px;
+  overflow-y: auto;
+  padding: 26px;
+}
+
+.chat-message {
+  max-width: 88%;
+  padding: 14px 17px;
+  border-radius: 2px;
+}
+
+.chat-message p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.assistant-message {
+  align-self: flex-start;
+  background: #fff;
+}
+
+.user-message {
+  align-self: flex-end;
+  background: var(--moss);
+  color: #fff;
+}
+
+.chat-form {
+  padding: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.chat-form label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.chat-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-controls textarea {
+  width: 100%;
+  min-height: 58px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  padding: 13px;
+}
+
+.chat-controls textarea:focus {
+  outline: 2px solid var(--amber);
+  outline-offset: 1px;
+}
+
+.chat-controls button {
+  min-width: 82px;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.chat-controls button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.chat-note {
+  margin: 10px 0 0;
+  color: #64706a;
+  font-size: 0.72rem;
 }
 
 .orientation {
@@ -307,6 +430,7 @@ footer p {
   }
 
   .orientation-copy,
+  .ask-grid,
   .record-grid {
     grid-template-columns: 1fr;
   }

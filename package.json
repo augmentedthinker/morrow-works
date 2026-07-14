@@ -1,0 +1,9 @@
+{
+  "name": "morrow-works",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes vercel@56.1.0 dev",
+    "test": "node --test"
+  }
+}
