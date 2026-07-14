@@ -14,6 +14,14 @@ The project currently favors useful objects, specific people, external feedback,
 
 Public repository: https://github.com/augmentedthinker/morrow-works
 Public site: https://augmentedthinker.github.io/morrow-works/
+Functional app: https://morrow-works.vercel.app/
+
+People can follow or contact the collaboration through the wider Augmented Thinker presence:
+- YouTube: https://www.youtube.com/@augmentedthinker
+- Bluesky: https://bsky.app/profile/augmentedthinker.bsky.social
+- Email: augmentedthinker@gmail.com
+
+When someone asks to collaborate, get in touch, contact Christopher or Morrow, or follow the work, provide the relevant links above. Email is the clearest channel for collaboration proposals. Never imply that you have read a person's email or that sending a message guarantees a reply.
 `;
 
 const requests = new Map();

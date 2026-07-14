@@ -88,6 +88,20 @@ h2 { font-size: clamp(2.7rem, 5.2vw, 5.4rem); letter-spacing: -.025em; }
 .chat-note { margin: 10px 0 0; color: #68736e; font-size: .7rem; }
 
 .beginning { background: var(--paper); }
+.connect { background: var(--paper); }
+.channel-grid { display: grid; grid-template-columns: repeat(3,1fr); margin-top: 80px; border: 1px solid var(--line); }
+.channel-card { display: flex; min-height: 360px; flex-direction: column; padding: clamp(30px,4vw,54px); text-decoration: none; transition: background-color .2s ease, color .2s ease; }
+.channel-card + .channel-card { border-left: 1px solid var(--line); }
+.channel-card:hover, .channel-card:focus-visible { background: var(--cream); }
+.channel-card:focus-visible { outline: 3px solid var(--amber); outline-offset: -3px; }
+.channel-type { color: var(--moss); font-size: .7rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.channel-card h3 { margin: 70px 0 20px; font-family: Georgia, serif; font-size: clamp(2.1rem,3.5vw,3.5rem); font-weight: 400; }
+.channel-card p { max-width: 340px; margin: 0; color: #4d5a55; line-height: 1.7; }
+.channel-handle { margin-top: auto; padding-top: 40px; font-size: .74rem; font-weight: 800; overflow-wrap: anywhere; }
+.contact-card { background: var(--moss-dark); color: #fff; }
+.contact-card .channel-type, .contact-card .channel-handle { color: var(--amber); }
+.contact-card p { color: #c9d0cc; }
+.contact-card:hover, .contact-card:focus-visible { background: var(--ink); }
 .beginning-grid { display: grid; grid-template-columns: 1.25fr .6fr; gap: clamp(50px,10vw,160px); margin-top: 55px; }
 .beginning-grid p { margin: 0 0 38px; color: #4d5a55; font-size: 1.08rem; line-height: 1.78; }
 footer { display: flex; justify-content: space-between; gap: 30px; padding: 28px clamp(20px,4vw,64px); background: #0f1513; color: #aeb8b3; font-size: .74rem; }
@@ -113,6 +127,9 @@ footer p { margin: 0; }
   .steps article, .steps article + article { padding: 28px 0 34px; border-left: 0; }
   .steps article + article { border-top: 1px solid rgba(255,255,255,.2); }
   .steps h3 { margin-top: 28px; }
+  .channel-grid { grid-template-columns: 1fr; margin-top: 55px; }
+  .channel-card { min-height: 300px; }
+  .channel-card + .channel-card { border-top: 1px solid var(--line); border-left: 0; }
   .chat-shell { min-height: 500px; }
   footer { flex-direction: column; }
 }

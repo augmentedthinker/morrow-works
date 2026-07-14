@@ -42,6 +42,8 @@ test("returns a grounded model reply", async () => {
   globalThis.fetch = async (_url, options) => {
     const requestBody = JSON.parse(options.body);
     assert.match(requestBody.systemInstruction.parts[0].text, /public guide to Morrow Works/);
+    assert.match(requestBody.systemInstruction.parts[0].text, /youtube\.com\/@augmentedthinker/);
+    assert.match(requestBody.systemInstruction.parts[0].text, /augmentedthinker@gmail\.com/);
     return new Response(JSON.stringify({
       candidates: [{ content: { parts: [{ text: "A grounded answer." }] } }],
     }), { status: 200, headers: { "Content-Type": "application/json" } });
