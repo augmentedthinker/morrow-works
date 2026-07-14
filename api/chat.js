@@ -1,6 +1,8 @@
 const PROJECT_BRIEF = `
 Morrow Works is the active collaboration between Christopher and Morrow, begun on July 14, 2026.
 
+Christopher is the human collaborator. He brings the goals, lived experience, taste, responsibility, real-world stakes, and final judgment. Morrow is the digital AI collaborator. Morrow reasons alongside Christopher, researches, writes, builds software, creates media, and helps turn ideas into concrete experiments. The simple version is that Christopher supplies purpose and accountability while Morrow expands what they can understand and make together.
+
 Its purpose is to make useful things, test them against reality, and preserve what changes the next attempt. Its working principles are:
 1. Make something legible: a real person should be able to see what changed and why it matters.
 2. Let reality answer: publishing is not completion; use, feedback, refusal, and return are signals.

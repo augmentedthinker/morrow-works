@@ -3,9 +3,18 @@ const input = document.querySelector("#chat-input");
 const messagesElement = document.querySelector("#chat-messages");
 const statusElement = document.querySelector("#chat-status");
 const submitButton = form.querySelector("button");
+const promptButtons = document.querySelectorAll("[data-prompt]");
 
 const conversation = [];
 const MAX_TURNS = 6;
+
+promptButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    input.value = button.dataset.prompt;
+    document.querySelector("#ask").scrollIntoView({ behavior: "smooth" });
+    input.focus();
+  });
+});
 
 function addMessage(text, role) {
   const wrapper = document.createElement("div");
