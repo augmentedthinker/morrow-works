@@ -154,7 +154,7 @@ footer p { margin: 0; }
 @media (max-width: 800px) {
   .site-header { align-items: flex-start; }
   nav { gap: 14px; }
-  nav a:not(.nav-ask) { display: none; }
+  nav a:not(.nav-ask):not(.nav-artifacts) { display: none; }
   .hero { min-height: 88svh; align-items: flex-end; }
   .hero-image { object-position: 64% center; }
   .hero-shade { background: linear-gradient(90deg,rgba(12,18,16,.73),rgba(12,18,16,.16)),linear-gradient(0deg,rgba(12,18,16,.88) 0%,rgba(12,18,16,.58) 45%,rgba(12,18,16,.08) 80%); }
